@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Java Script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+    <title>E-Commerce</title>
+
+</head>
+
+<body>
+
+    <!--
+        Elemento:
+            * tag que abre
+            * tag que fecha
+            * dentro: conteúdo
+
+        Elemento: BOLD
+            * tag que abre: <b>
+            * tag que fecha: </b>
+            * dentro: conteúdo: palavra
+
+        Esta frase tem um <b>palavra</b> em negrito.
+    -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <E-Commerce>
+                </a>
+                <img src="e-commerce.png" alt="e-commerce">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Ofertas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Cupons</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Lojas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Loja 1</a></li>
+                                <li><a class="dropdown-item" href="#">Loja 2</a></li>
+                                <li><a class="dropdown-item" href="#">Loja 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Blog</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar Produtos"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Categorias
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Smartphones</a></li>
+                        <li><a class="dropdown-item" href="#">Notebooks</a></li>
+                        <li><a class="dropdown-item" href="#">Tablets</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Lojas
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="https://americanas.com.br">Americanas</a></li>
+                        <li><a class="dropdown-item" href="https://submarino.com.br">Submarino</a></li>
+                        <li><a class="dropdown-item" href="https://extra.com.br">Extra</a></li>
+                    </ul>
+                </div>
+                <div>
+                    Top Ofertas
+                </div>
+                <div>
+                    Comentários
+                </div>
+                <div>
+                    Black Friday
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Ofertas em Destaque -->
+    <main></main>
+    <div class="container">
+        <div>
+            <h2 class="h5">Ofertas em Destaque</h2>
+        </div>
+
+        <div class="row">
+            <div class="col text-center">
+                <a href="https://www.pontofrio.com.br/iphone-se-apple-64gb-branco-tela-retina-hd-de-4-7-ios-camera-traseira-12mp-mhgq3br-a-55014856/p/55014856">
+                    <img src="iphone-se.png" alt="iphone-se">
+                </a> <br>
+                <div>
+                    R$ 2699,00
+                </div>
+                <b>iPhone SE</b> 
+            </div>
+            <div class="col text-center">
+                <img src="ipad.png" alt="ipad"> <br>
+                <div>
+                    R$ 2.999,00
+                </div>
+                <b>iPad</b>
+            </div>
+            <div class="col text-center">
+                <img src="macbook-air.png" alt="macbook-air"> <br>
+                <div class="text-bold-azul">
+                    R$ 7.299,00
+                </div>
+                <b>Macbook Air</b> 
+            </div>
+        </div>
+        <!-- Últimas Ofertas -->
+        <div class="container">
+            <div class="float-end">
+                <b>Ordernar por:</b>
+                <select>
+                    <option>Mais recentes</option>
+                    <option>Mais curtidas</option>
+                    <option>Mais comentadas</option>
+                </select>
+            </div>
+            <div>
+                <h2 class="h5">Últimas Ofertas</h2>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <img src="airpods-3.png" alt="airpods-3"> <br>
+                    <div>
+                        R$ 1.129,00
+                    </div>
+                    <b>AirPods</b> 
+                </div>
+                <div class="col text-center">
+                    <img src="imac.png" alt="imac"> <br>
+                    <div>
+                        R$ 9.629,00
+                    </div>
+                   <b>iMac</b> 
+                </div>
+                <div class="col text-center">
+                    <img src="applewatch.png" alt="applewatch"> <br>
+                    <div>
+                        R$ 1.499,00
+                    </div>
+                    <b>Apple Watch</b> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer></footer>
+
+</body>
+
+</html>
